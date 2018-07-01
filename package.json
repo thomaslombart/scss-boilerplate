@@ -1,0 +1,16 @@
+{
+  "name": "scss-boilerplate",
+  "version": "1.0.0",
+  "description": "SCSS boilerplate to quickly get started on building a webpage following a simplified version of the 7-1 pattern",
+  "main": "index.html",
+  "scripts": {
+    "watch:scss": "node-sass sass/main.scss css/style.css -w",
+    "build:scss": "node-sass sass/main.scss css/style.css --output-style compressed"
+  },
+  "repository": "git@github.com:thomlom/scss-boilerplate.git",
+  "author": "Thomas Lombart <t.lombart97@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
