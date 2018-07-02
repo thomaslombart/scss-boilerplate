@@ -16,8 +16,13 @@ It contains these folders :
 
 ### Installing
 
-Run `npm install`
+- Install the `live-server` package : `npm install -g live-server`
+- Run `npm install`
 
 ### Running the app
 
-Run `npm run watch:sass` and open the `index.html` file in a browser.
+Run `npm run dev`. Your browser should automatically open a new tab where you can see your app. 
+
+*Note :* live reload is enabled so just modify your files and it will be reflected on the app instantly.
+
+
