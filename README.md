@@ -21,7 +21,11 @@ It contains these folders :
 
 ### Running the app
 
-Run `npm run dev`. Your browser should automatically open a new tab where you can see your app. 
+Run `npm run start`. Your browser should automatically open a new tab where you can see your app. 
+
+### Building the app
+
+Run `npm run build`. It will automatically add vendor prefixes to CSS rules and compress all your `.scss` files into one `style.css` file located in your `css` folder.
 
 *Note :* live reload is enabled so just modify your files and it will be reflected on the app instantly.
 

@@ -4,16 +4,21 @@
   "description": "SCSS boilerplate to quickly get started on building a webpage following a simplified version of the 7-1 pattern",
   "main": "index.html",
   "scripts": {
-    "dev": "npm-run-all --parallel liveserver watch:scss ",
+    "start": "npm-run-all --parallel liveserver watch",
     "liveserver": "live-server",
-    "watch:scss": "node-sass sass/main.scss css/style.css -w",
-    "build:scss": "node-sass sass/main.scss css/style.css --output-style compressed"
+    "watch": "node-sass sass/main.scss css/style.css -w",
+    "compile": "node-sass sass/main.scss css/style.css",
+    "prefix": "postcss css/style.css --use autoprefixer -o css/style.css",
+    "compress": "node-sass css/style.css css/style.css --output-style compressed",
+    "build": "npm-run-all compile prefix compress"
   },
   "repository": "git@github.com:thomlom/scss-boilerplate.git",
   "author": "Thomas Lombart <t.lombart97@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^9.0.1",
     "node-sass": "^4.9.0",
-    "npm-run-all": "^4.1.3"
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.0"
   }
 }
